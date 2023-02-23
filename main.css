@@ -1,0 +1,162 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 16px 16px 16px;
+    background-color:  #3182d4;
+    margin-bottom: 15px;
+    color:#fff;
+    display: flex;
+    text-transform: none;
+    justify-content: space-between;
+}
+
+
+.container{
+    max-width: 1024px;
+    width:100% ;
+    margin: 0 auto;
+}
+
+
+header >.container{
+    padding-bottom: 16px 0;
+}
+
+
+ul li{
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header .container ul li a{
+    color:#fff;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-top:16px;
+}
+
+.container.menu{
+    max-width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre-a-loja{
+    display:grid;
+    grid-template-columns: 38% 58%;
+    column-gap: 4%;
+}
+
+.container.menu ul{
+    padding-top: 10px;
+}
+
+.container ul li a{
+    color:#000000;
+}
+.sobre-a-loja img{
+    width:300px;
+    right:300px;
+}
+
+.produto img{
+    width:100%;
+    padding-bottom: 15px;
+}
+
+.sobre-a-loja div h2,
+.titulo-produto h2{
+    color:#3182d4;
+    font-style: italic;
+    border-bottom: 2px solid #3182d4;
+    margin-bottom: 15px;
+}
+
+.titulo-produto h2{
+    margin-top: 15px;
+}
+
+.produtos{
+    display:grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    column-gap: 1%;
+}
+
+.produtos .produto button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border:none;
+    background-color:#3182d4; ;
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor:pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    
+}
+
+.produtos .produto h3,
+.produtos .produto a{
+    padding-bottom: 15px;
+}
+/*LAYOUT MOBILE*/
+@media screen and (max-width: 640px){
+
+    .container{
+        max-width: 90%;
+    }
+
+    .sobre-a-loja{
+        display:block;
+    }
+
+    .produtos{
+        display:block;
+    }
+
+    .produtos .produto button{
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+        border:none;
+        background-color:#3182d4; ;
+        color:#fff;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        cursor:pointer;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+    }
+}
+
+/*LAYOUT TABLET*/
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+
+    .container{
+        max-width: 90%;
+    }
+
+    .produtos{
+        display:grid;
+        grid-template-columns: repeat(2,48%);
+        column-gap: 1%;
+        row-gap: 1%;        
+}
+}
+
+
+
