@@ -140,6 +140,11 @@ header .container ul li a{
         margin-bottom: 15px;
         
     }
+
+    .container.menu{
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 /*LAYOUT TABLET*/
